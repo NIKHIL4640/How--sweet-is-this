@@ -1,67 +1,112 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Your Custom Font', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://media.timeout.com/images/105986367/image.jpg');
+    box-sizing: border-box;
+    background-image: url('bgimg.jpg');
     background-size: cover;
     background-position: center;
-    color: #ffffff;
-    text-align: center;
+    background-repeat: no-repeat;
+    color: #333;
 }
 
 header {
-    background-color: #e6955c;
-    padding: 20px;
     text-align: center;
+    background: rgba(255, 0, 0, 0.8);
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header:hover {
+    background: rgba(255, 0, 0, 1);
+}
+
+.logo {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    text-align: center;
+    background: #ecf0f1;
+    padding: 0.5em;
+}
+
+nav a:hover {
+    color: #3c64e7;
+    font-weight: bold;
 }
 
 .main-content {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
 }
 
 article {
-    margin-bottom: 30px;
-    border: 1px solid #ccc;
-    transition: border 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
 
 article:hover {
-    border: 1px solid #ffd700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+article h2 {
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+article p {
+    color: #fafd35; 
 }
 
 footer {
-    background-color: #333;
+    background: #503e2c;
     color: #fff;
-    padding: 20px;
+    padding: 1em;
     text-align: center;
 }
 
-footer p:hover {
-    color: #ffd700;
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    color: #fff;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.contact-form button {
+    background: #db3434;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
     cursor: pointer;
 }
 
-.logo img.small-logo {
-    width: 50px;
-    height: auto;
-}
-
-.logo img.small-logo:hover {
-    transform: scale(1.1);
-}
-
-.candy-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.candy {
-    max-width: 48%;
-    height: auto;
-}
-
-.candy:hover {
+.contact-form button:hover {
+    background: #c0392b;
     transform: scale(1.1);
 }
